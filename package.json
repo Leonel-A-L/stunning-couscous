@@ -1,6 +1,26 @@
 {
   "dependencies": {
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "rest-rant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonel-A-L/stunning-couscous.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonel-A-L/stunning-couscous/issues"
+  },
+  "homepage": "https://github.com/Leonel-A-L/stunning-couscous#readme",
+  "description": ""
 }
