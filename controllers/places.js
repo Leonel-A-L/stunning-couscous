@@ -18,6 +18,11 @@ router.get('/', (req,res) => {
         thanks: 'Khloe Arledge at Unsplash'
       }]
       
+      router.get('/new', (req, res) => {
+        res.render('places/new')
+      })
+      
+
     res.render('places/index', { places })
 })
 
