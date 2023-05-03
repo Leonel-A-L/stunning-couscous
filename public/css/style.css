@@ -7,3 +7,10 @@ h1 {
   button {
     background-color: cornflowerblue;
   }
+
+  img {
+    height: 50%;
+    width: 50%;    
+  }
+
+  
