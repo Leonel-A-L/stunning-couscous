@@ -20,6 +20,14 @@ router.get('/:index', (req,res) => {
   })
 })
 
+router.get('/:index/edit', (req,res) => {
+  const { index } = req.params
+  res.render('places/edit', {
+      place: places[index],
+      index
+  })
+})
+
 router.post('/', (req, res) => {
   console.log(req.body)
   if (!req.body.pic) {
