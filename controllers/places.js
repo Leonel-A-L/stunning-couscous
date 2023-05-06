@@ -11,6 +11,7 @@ router.get('/', (req,res) => {
     res.render('places/index', { places })
 })
 
+
 router.get('/:index', (req,res) => {    
   const { index } = req.params
   res.render('show', {
@@ -18,7 +19,6 @@ router.get('/:index', (req,res) => {
       index
   })
 })
-
 
 router.post('/', (req, res) => {
   console.log(req.body)
@@ -36,10 +36,10 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
-
-
-
-
-
+router.delete('/:index', (req, res) => {  
+  const { index } = req.params  
+  places.splice(index, 1)
+    res.redirect('/places')     
+})
 
 module.exports = router

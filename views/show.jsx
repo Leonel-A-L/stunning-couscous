@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('./default')
 
-function show (data) {
+function show (data, index) {
     console.log(data)
     return (
         <Def>
@@ -9,10 +9,10 @@ function show (data) {
             <h1>{ data.place.name }</h1>
             <h3> Rating </h3>
             <p>no rating yet</p>
-            <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
+            <a href={`/places/${data.index}/edit`} className="btn btn-warning"> 
             Edit
             </a>  
-            <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
+            <form method="POST" action={`/places/${data.index}?_method=DELETE`}> 
                 <button type="submit" className="btn btn-danger">
                  Delete
                 </button>
